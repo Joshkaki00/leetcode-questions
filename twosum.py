@@ -5,17 +5,17 @@ class Solution:
         Store complements in a hash map for O(1) lookup
         """
         complement_map = {}  # value -> index
-        
+
         for i, num in enumerate(nums):
             complement = target - num
-            
+
             # Check if complement exists in our map
             if complement in complement_map:
                 return [complement_map[complement], i]
-            
+
             # Store current number and its index
             complement_map[num] = i
-        
+
         return []  # This shouldn't happen given the problem constraints
 
 
@@ -42,7 +42,7 @@ def test_solution():
         ([3, 2, 4], 6),
         ([3, 3], 6)
     ]
-    
+
     print("Testing optimal solution:")
     for nums, target in test_cases:
         result = solution.twoSum(nums, target)
@@ -51,4 +51,4 @@ def test_solution():
         print()
 
 # Uncomment to test locally:
-# test_solution()
+test_solution()
