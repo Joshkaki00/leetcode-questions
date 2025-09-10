@@ -11,7 +11,8 @@ class Solution:
         remaining_sum = total_sum - min_salary - max_salary
         remaining_count = len(salary) - 2
         
-        return remaining_sum / remaining_count
+        # Use float() to ensure proper floating-point division
+        return float(remaining_sum) / remaining_count
     
     # Approach 2: Single pass to find min/max (More efficient)
     def average_single_pass(self, salary):
