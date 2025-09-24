@@ -1,5 +1,11 @@
 # LeetCode 223: Rectangle Area
 
+'''SCENARIO: Urban Planning Land Development
+You're working for a city planning department that needs to calculate the total area covered by two proposed development zones.
+These rectangular zones may overlap, and you must compute the exact total area that will be developed to ensure proper zoning compliance and budget allocation.
+Your calculations affect property taxes, infrastructure planning, and community development for thousands of residents.
+Accuracy is essential since legal documents will be based on your area calculations.'''
+
 class Solution:
     # Approach 1: Mathematical Formula (Optimal)
     def computeArea(self, ax1, ay1, ax2, ay2, bx1, by1, bx2, by2):
