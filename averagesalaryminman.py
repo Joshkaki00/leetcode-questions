@@ -1,3 +1,9 @@
+'''SCENARIO: HR Compensation Analysis
+You're working in Human Resources for a tech company conducting salary equity analysis.
+To get a fair picture of typical compensation and remove outliers that might skew the analysis, you need to calculate average salaries excluding the minimum and maximum values.
+This analysis will inform company-wide salary adjustments and ensure fair compensation practices.
+Your calculations must be accurate since they'll affect employee livelihoods and company budget planning.'''
+
 # LeetCode 1491: Average Salary Excluding the Minimum and Maximum Salary
 
 class Solution:
