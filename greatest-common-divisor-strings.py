@@ -22,8 +22,12 @@ class Solution:
         if str1 + str2 != str2 + str1:
             return ""
         
-        # Find GCD of lengths
-        from math import gcd
+        # Calculate GCD manually for compatibility
+        def gcd(a, b):
+            while b:
+                a, b = b, a % b
+            return a
+        
         gcd_length = gcd(len(str1), len(str2))
         
         # Return prefix of that length
