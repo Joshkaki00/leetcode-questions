@@ -1,4 +1,36 @@
 # LeetCode 21: Merge Two Sorted Lists
+"""
+LeetCode 21: Merge Two Sorted Lists
+SCENARIO: Hospital Patient Queue Management
+You're developing software for a hospital's emergency department. Two separate triage stations 
+evaluate patients and assign priority scores, creating two sorted lists of patients (sorted by urgency). 
+When the hospital gets busy, these two queues need to be merged into a single prioritized list while 
+maintaining the correct order. Lives depend on getting the most critical patients treated first, so the 
+merging process must preserve the sorted order perfectly. The system must handle this efficiently even 
+during peak emergency periods.
+Problem:
+Merge two sorted linked lists and return it as a sorted list. The list should be made by splicing 
+together the nodes of the first two lists.
+Args:
+    list1 (ListNode): Head of the first sorted linked list
+    list2 (ListNode): Head of the second sorted linked list
+Returns:
+    ListNode: Head of the merged sorted linked list
+Time Complexity: O(m + n) where m and n are the lengths of the two lists
+Space Complexity: 
+    - Iterative approach: O(1) - only uses constant extra space
+    - Recursive approach: O(m + n) - due to recursion stack
+Examples:
+    Input: list1 = [1,2,4], list2 = [1,3,4]
+    Output: [1,1,2,3,4,4]
+    Input: list1 = [], list2 = []
+    Output: []
+    Input: list1 = [], list2 = [0]
+    Output: [0]
+Approaches:
+1. Iterative with dummy node: Uses a dummy head to simplify edge cases and iteratively compares nodes
+2. Recursive: Recursively chooses the smaller head and merges the rest of the lists
+"""
 
 # Definition for singly-linked list
 class ListNode:
